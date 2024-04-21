@@ -293,5 +293,9 @@ public class University {
         }
     }
 
+    public void ExitSystem() {
+        System.out.println(BOLD_TEXT + "Sistemdən çıxış edildi..." + ANSI_RESET);
+        System.exit(0);
+    }
 
 }

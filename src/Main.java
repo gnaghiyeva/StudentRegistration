@@ -170,6 +170,9 @@ public class Main {
             else if (operationNumber==7) {
                 university.FindStudentByFaculty();
             }
+            else if (operationNumber==8) {
+                university.ExitSystem();
+            }
 
         }
 
