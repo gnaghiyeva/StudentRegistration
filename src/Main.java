@@ -155,6 +155,9 @@ public class Main {
             else if (operationNumber==2) {
                 university.showAllStudents();
             }
+            else if (operationNumber==3) {
+                university.RemoveStudent();
+            }
 
         }
 

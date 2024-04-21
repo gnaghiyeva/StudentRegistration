@@ -1,6 +1,7 @@
 package Entities;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import static Helpers.Colors.*;
 
@@ -50,4 +51,29 @@ public class University {
         }
 
     }
+
+    public void RemoveStudent() {
+        Student student = new Student();
+        Scanner scanner = new Scanner(System.in);
+
+
+        if (students.isEmpty()) {
+            System.out.println(ANSI_YELLOW + "Heç bir tələbə əlavə olunmayıb" + ANSI_RESET);
+        } else {
+            System.out.print("Silmək istədiyiniz tələbənin finkodunu daxil edin: ");
+            String inputFIN = scanner.nextLine();
+            for (int i = 0; i < students.size(); i++) {
+                student = students.get(i);
+                if (student.getFIN().equals(inputFIN)) {
+                    students.remove(i);
+                    System.out.println(ANSI_GREEN + "Tələbə uğurla silindi." + ANSI_RESET);
+                    return;
+                }
+            }
+            System.out.println(ANSI_RED + "Bu FIN koduna uyğun tələbə tapılmadı." + ANSI_RESET);
+
+        }
+
+    }
+
 }
