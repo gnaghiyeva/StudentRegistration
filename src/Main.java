@@ -158,6 +158,9 @@ public class Main {
             else if (operationNumber==3) {
                 university.RemoveStudent();
             }
+            else if (operationNumber==4) {
+                university.FindStudent();
+            }
 
         }
 

@@ -76,4 +76,28 @@ public class University {
 
     }
 
+    public String FindStudent() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Tələbənin finkodunu daxil edin: ");
+        String inputFIN = scanner.nextLine();
+
+        boolean found = false;
+        for (Student student : students) {
+            if (student.getFIN().equalsIgnoreCase(inputFIN)) {
+                System.out.println("Axtarılan tələbə adı: " + student.getName() + ",  soyadı: " + student.getSurname() + ", yaşı: " + student.getAge());
+                found = true;
+                //return inputFIN;
+            } else if (student.getFIN().isEmpty()) {
+                System.out.println("FİN boş ola bilməz");
+            }
+
+        }
+
+        if (found != true) {
+            System.out.println(ANSI_RED + "Tələbə tapılmadı" + ANSI_RESET);
+        }
+        return inputFIN;
+    }
+
+
 }
