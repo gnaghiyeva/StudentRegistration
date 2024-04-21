@@ -173,7 +173,12 @@ public class Main {
             else if (operationNumber==8) {
                 university.ExitSystem();
             }
-
+            else if (operationNumber<0){
+                System.out.println("Seçim 0 ola bilməz");
+            }
+            else if (operationNumber>6){
+                System.out.println("Zəhmət olmasa 1 ilə 6 arası bir ədəd daxil edin");
+            }
         }
 
     }
