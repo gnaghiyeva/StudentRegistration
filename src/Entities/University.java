@@ -264,5 +264,34 @@ public class University {
 
     }
 
+    public void FindStudentByFaculty() {
+        Scanner scanner = new Scanner(System.in);
+
+        if (students.isEmpty()) {
+            System.out.println(ANSI_YELLOW + "Heç bir tələbə əlavə olunmayıb" + ANSI_RESET);
+        }
+
+        else {
+            System.out.print("Tələbənin fakültəsini daxil edin: ");
+            String inputFaculty = scanner.nextLine();
+
+            boolean found = false;
+            for (Student student : students) {
+                if (student.getFaculty().equalsIgnoreCase(inputFaculty)) {
+                    System.out.println("Axtarılan tələbə adı: " + student.getName() + ",  soyadı: " + student.getSurname() + ", yaşı: " + student.getAge()+", finkodu:"+student.getFIN());
+                    found = true;
+
+                } else if (student.getFaculty().isEmpty()) {
+                    System.out.println("Fakultə adı boş ola bilməz");
+                }
+            }
+
+            if (found != true) {
+                System.out.println(ANSI_RED + "Tələbə tapılmadı" + ANSI_RESET);
+            }
+
+        }
+    }
+
 
 }

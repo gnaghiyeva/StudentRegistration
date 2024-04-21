@@ -167,6 +167,9 @@ public class Main {
             else if (operationNumber==6) {
                 university.SearchStudentByName();
             }
+            else if (operationNumber==7) {
+                university.FindStudentByFaculty();
+            }
 
         }
 
