@@ -164,6 +164,9 @@ public class Main {
             else if (operationNumber==5) {
                 university.UpdateStudent();
             }
+            else if (operationNumber==6) {
+                university.SearchStudentByName();
+            }
 
         }
 

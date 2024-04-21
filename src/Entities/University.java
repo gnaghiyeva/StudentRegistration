@@ -242,5 +242,27 @@ public class University {
         }
     }
 
+    public void SearchStudentByName() {
+        Scanner scanner = new Scanner(System.in);
+
+        if (students.isEmpty()) {
+            System.out.println(ANSI_YELLOW + "Heç bir tələbə əlavə olunmayıb" + ANSI_RESET);
+        } else {
+            boolean found = false;
+            System.out.print("Hərf daxil edin: ");
+            char inputLetter = scanner.next().charAt(0);
+            for (Student student : students) {
+                if (student.getName().charAt(0) == inputLetter) {
+                    System.out.println("Adı  "+inputLetter+"  ilə başlayan tələbələr: " + student.getName() + " " + student.getSurname() + ", Finkod: " + student.getFIN());
+                    found = true;
+                }
+            }
+            if (!found) {
+                System.out.println("Tələbə tapılmadı");
+            }
+        }
+
+    }
+
 
 }
