@@ -152,6 +152,10 @@ public class Main {
                 }
             }
 
+            else if (operationNumber==2) {
+                university.showAllStudents();
+            }
+
         }
 
     }

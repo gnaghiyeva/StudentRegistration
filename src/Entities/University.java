@@ -2,8 +2,7 @@ package Entities;
 
 import java.util.ArrayList;
 
-import static Helpers.Colors.ANSI_GREEN;
-import static Helpers.Colors.ANSI_RESET;
+import static Helpers.Colors.*;
 
 public class University {
     private int Id;
@@ -37,5 +36,18 @@ public class University {
             }
         }
         return false;
+    }
+
+    //Bütün tələbələrin göstərilməsi
+    public void showAllStudents() {
+        System.out.println("************* T ə l ə b ə l ə r i n   S i y a h ı s ı *************");
+        if (students.isEmpty()) {
+            System.out.println(ANSI_YELLOW + "Heç bir tələbə əlavə olunmayıb" + ANSI_RESET);
+        } else {
+            for (Student student : students) {
+                student.fullInfo();
+            }
+        }
+
     }
 }
