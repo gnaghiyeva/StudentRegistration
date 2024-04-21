@@ -12,6 +12,7 @@
       <change afterPath="$PROJECT_DIR$/src/Entities/Student.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Entities/University.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Helpers/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/Helper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Helpers/Logo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/university_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -76,7 +77,7 @@
       <updated>1711476371958</updated>
       <workItem from="1711476372954" duration="103000" />
       <workItem from="1713634873141" duration="8000" />
-      <workItem from="1713634903139" duration="2363000" />
+      <workItem from="1713634903139" duration="3011000" />
     </task>
     <servers />
   </component>
